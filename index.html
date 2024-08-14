@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+
+    html{
+        background: url(https://cdn4.vectorstock.com/i/1000x1000/51/93/modern-tech-background-with-geometric-shapes-vector-37915193.jpg);
+    }
+    body {
+
+        display: grid;
+        place-items: center;
+
+        height: 100vh;
+    }
+
+
+    input {
+        padding: 10px;
+        border-radius: 5px;
+        border-bottom: 1px solid white!important;
+        color :white;
+        background-color: transparent;
+        border: 1px solid transparent;
+
+
+    }
+
+    input:focus {
+       border: 1px solid #f00;
+       outline: none;
+    }
+
+    .main {
+        width: 70%;
+        height: 200px;
+        backdrop-filter: blur(20px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.34);
+        animation: scale  1s infinite;
+    
+    }
+
+    @keyframes  scale {
+    0% { transform: scale(1); }
+    50% {
+
+
+    border-color:  bisque; }
+
+
+    100% { transform: scale(1); }
+    }
+    
+</style>
+
+</head>
+<body>
+    <div class="main">
+        <input placeholder="Enter your name" type="text">
+    </div>
+</body>
+</html>
